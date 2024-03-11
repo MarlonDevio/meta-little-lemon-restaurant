@@ -1,0 +1,25 @@
+.contact {
+  @apply bg-color-yellow-darker py-4 px-8 rounded-xl text-white;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact:hover {
+  @apply bg-color-yellow-dark;
+}
+
+.navLink {
+  position: relative;
+}
+.navLink:after {
+  width: 0;
+  content: '';
+  position: absolute;
+  transition: width 0.5s ease-in-out;
+}
+
+.navLink:hover::after {
+  width: 100%;
+  border: rgb(var(--color-lime)) 2px solid;
+  bottom: -3px;
+  left: 0;
+}

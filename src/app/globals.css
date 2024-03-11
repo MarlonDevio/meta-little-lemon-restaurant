@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: 255, 254, 240;
+  --color-yellow-light: 255, 253, 208;
+  --color-yellow-dark: 255, 215, 0;
+  --color-yellow-darkest: 240, 202, 0;
+  --color-darkest: 203, 172, 5;
+  --color-lime: 152, 255, 152;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: rgb(var(--color-cream));
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: calc(4rem + 0.39vw);
+  }
+
+  /* Starts larger but not too overwhelming */
+  h2 {
+    font-size: calc(3.5rem + 0.39vw);
+  }
+
+  h3 {
+    font-size: calc(3.17rem + 0.39vw);
+  }
+
+  h4 {
+    font-size: calc(2.2rem + 0.39vw);
+  }
+
+  h5 {
+    font-size: calc(1.8rem + 0.39vw);
+  }
+
+  h6 {
+    font-size: calc(1.7rem + 0.39vw);
+  }
+
+  p {
+    font-size: calc(1.6rem + 0.39vw);
+  }
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: calc(5rem + 0.39vw);
+  }
+
+  h2 {
+    font-size: calc(4.5rem + 0.39vw);
+  }
+
+  h3 {
+    font-size: calc(4.17rem + 0.39vw);
+  }
+
+  h4 {
+    font-size: calc(3.2rem + 0.39vw);
+  }
+
+  h5 {
+    font-size: calc(2.2rem + 0.39vw);
+  }
+
+  h6 {
+    font-size: calc(2rem + 0.39vw);
+  }
+
+  p {
+    font-size: calc(1.6rem + 0.39vw);
+  }
+}
+
+/* Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: calc(6rem + 0.39vw);
+  }
+
+  h2 {
+    font-size: calc(5.5rem + 0.39vw);
+  }
+
+  h3 {
+    font-size: calc(5.17rem + 0.39vw);
+  }
+
+  h4 {
+    font-size: calc(4.2rem + 0.39vw);
+  }
+
+  h5 {
+    font-size: calc(3.2rem + 0.39vw);
+  }
+
+  h6 {
+    font-size: calc(2.5rem + 0.39vw);
+  }
+
+  p {
+    font-size: calc(1.6rem + 0.39vw);
+  }
+}
+
+/* Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  h1 {
+    font-size: calc(7rem + 0.39vw);
+  }
+
+  h2 {
+    font-size: calc(6.5rem + 0.39vw);
+  }
+
+  h3 {
+    font-size: calc(6.17rem + 0.39vw);
+  }
+
+  h4 {
+    font-size: calc(5.2rem + 0.39vw);
+  }
+
+  h5 {
+    font-size: calc(4.2rem + 0.39vw);
+  }
+
+  h6 {
+    font-size: calc(3.2rem + 0.39vw);
+  }
+
+  p {
+    font-size: calc(1.6rem + 0.39vw);
+  }
+}
+
+/* Extra large screens, TV */
+@media (min-width: 1201px) {
+  h1 {
+    font-size: calc(8rem + 0.39vw);
+  }
+
+  /* Largest size for clarity and impact */
+  h2 {
+    font-size: calc(7.5rem + 0.39vw);
+  }
+
+  h3 {
+    font-size: calc(7.17rem + 0.39vw);
+  }
+
+  h4 {
+    font-size: calc(6.2rem + 0.39vw);
+  }
+
+  h5 {
+    font-size: calc(4.2rem + 0.39vw);
+  }
+
+  h6 {
+    font-size: calc(3.2rem + 0.39vw);
+  }
+
+  p {
+    font-size: calc(1.6rem + 0.39vw);
+  }
+}
