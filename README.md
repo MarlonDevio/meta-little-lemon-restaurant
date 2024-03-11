@@ -1,34 +1,34 @@
-# Starting Boilerplate components and configuration for Nextjs 14
+Little Lemon Website
 
-This project is a starting template for Nextjs 14 with included components, framer motion, tailwind, typescript twMerge, and clsx configured and set to go.
+This project is a part of the Meta Professional FrontEnd Developer Certificate. It's a website called "Little Lemon" built with Next.js 14, Framer Motion, Tailwind CSS, TypeScript, twMerge, and clsx.
 
 ## Table of Contents
 
-- [Starting Boilerplate components and configuration for Nextjs 14](#starting-boilerplate-components-and-configuration-for-nextjs-14)
-  - [Table of Contents](#table-of-contents)
-  - [Description](#description)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Description
 
-This project serves as a boilerplate for starting new projects with pre-configured components, framer motion, tailwind, typescript twMerge, and clsx. It is a work in progress and ongoing, meaning that it will continue to be updated and improved over time.
+"Little Lemon" is a website project for the Meta Professional FrontEnd Developer Certificate. It's built with Next.js 14 and includes pre-configured components, Framer Motion for animations, Tailwind CSS for styling, TypeScript for type safety, twMerge for merging Tailwind CSS classes, and clsx for conditional class names.
 
 ## Features
 
-- Pre-configured components
-- Framer Motion for animations
-- Tailwind CSS for styling
-- TypeScript for type safety
+- Next.js 14 for building the website
+- Pre-configured components for faster development
+- Framer Motion for smooth animations
+- Tailwind CSS for utility-first styling
+- TypeScript for type safety and better developer experience
 - twMerge for merging Tailwind CSS classes
 - clsx for conditional class names
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/your-username/little-lemon.git`
 2. Install dependencies: `npm install`
 
 ## Usage
