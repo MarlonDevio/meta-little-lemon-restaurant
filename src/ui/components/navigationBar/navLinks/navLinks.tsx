@@ -7,7 +7,12 @@ const NavLinks: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({
   className
 }) => {
   return (
-    <ul className=' hidden md:flex gap-8 ml-auto text-[1.6rem] uppercase'>
+    <ul
+      className={cn(
+        'hidden md:flex gap-8 ml-auto text-[1.6rem] uppercase',
+        className
+      )}
+    >
       {navigationLinks.map((link) => (
         <li
           key={link.id}

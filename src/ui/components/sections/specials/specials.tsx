@@ -5,7 +5,8 @@ import SectionTitle from '../../sectionTitle/sectionTitle';
 import Card from '../../card/card';
 import { specialFoods } from '@/constants/specialFoods';
 import { HTMLAttributes } from 'react';
-import { StaticImageData, Image } from 'next/image';
+import { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 interface SpecialsProps extends HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
@@ -20,10 +21,15 @@ interface SpecialsProps extends HTMLAttributes<HTMLDivElement> {
 const MenuItem: React.FC<SpecialsProps> = ({ children, foodItem }) => {
   return (
     <Card className='bg-color-cream py-[4rem] shadow-sm gap-10 px-[5rem] grid grid-cols-[1fr_min-content] rounded-[1rem]'>
-      <h6 className='font-medium text-[2rem] col-span-1 row-start-1 '>
+      <Image
+        src={foodItem.image}
+        alt={foodItem.name}
+        className='rounded-[1rem] col-span-3 row-start-1'
+      />
+      <h6 className='font-medium text-[2rem] col-span-1 row-start-2 '>
         {foodItem.name}
       </h6>
-      <p className=' col-start-2 col-span-1 row-start-1 text-[2rem] justify-self-end'>
+      <p className=' col-start-2 col-span-1 row-start-2 text-[2rem] justify-self-end'>
         {foodItem.price}
       </p>
       <p className='col-span-2 text-[2rem]'>{foodItem.description}</p>
@@ -50,7 +56,7 @@ const Specials: React.FC = () => {
           </Button>
         </div>
 
-        <div className='grid grid-cols-3 gap-10 py-20'>
+        <div className='grid grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-10 py-20'>
           {specialFoods.map((foodItem, index) => {
             return (
               <MenuItem

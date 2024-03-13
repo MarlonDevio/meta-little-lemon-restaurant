@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 
+import plugin from 'tailwindcss/plugin';
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -32,6 +34,14 @@ const config: Config = {
       }
     }
   },
-  plugins: []
+  plugins: [
+    plugin(function ({ addComponents }) {
+      addComponents({
+        '.test-btn': {
+          backgroundColor: '#1F1F1F'
+        }
+      });
+    })
+  ]
 };
 export default config;
